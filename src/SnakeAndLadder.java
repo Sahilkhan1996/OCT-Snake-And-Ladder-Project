@@ -32,6 +32,10 @@ public class SnakeAndLadder {
 				System.out.println("No play");
 				break;
 			}
+			// UC5: Checker to ensure that the position achieved exact 100
+			if (playerposition > 100) {
+				playerposition = playerposition - dienumber;
+			}
 			if (playerposition < 0) {
 				playerposition = 0;
 			}
