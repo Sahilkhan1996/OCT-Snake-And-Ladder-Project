@@ -1,3 +1,4 @@
+
 import java.util.Random;
 
 class SnakeAndLadder {
@@ -21,6 +22,14 @@ class SnakeAndLadder {
 
 	}
 
+	public static void rolldie1() {
+		player1();
+	}
+
+	public static void rolldie2() {
+		player2();
+	}
+
 	public static void player1() {
 		count++;
 		System.out.println("number of time the die is rolling" + count);
@@ -33,6 +42,7 @@ class SnakeAndLadder {
 		switch (gametime) {
 		case 0:
 			playerposition1 = playerposition1 + dienumber;
+			rolldie1();
 
 			break;
 		case 1:
@@ -65,6 +75,7 @@ class SnakeAndLadder {
 		switch (gametime) {
 		case 0:
 			playerposition2 = playerposition2 + dienumber;
+			rolldie2();
 			break;
 		case 1:
 
